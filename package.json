@@ -1,7 +1,7 @@
 {
   "name": "my-profile",
   "version": "1.0.0",
-  "description": "portfolio site",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -14,5 +14,5 @@
   },
   "author": "Shubham Latkar",
   "license": "MIT",
-  "keywords": ["css3", "scss", "html5"]
+  "keywords": []
 }
