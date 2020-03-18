@@ -81,6 +81,11 @@ img {
       h1 {
         font-family: 4rem;
         line-height: 1.2;
+        .txt-type {
+          .txt{
+            border-right: 0.2rem solid #777;
+          }
+        }
       }
     }
 
