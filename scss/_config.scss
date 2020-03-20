@@ -12,5 +12,4 @@ $bg-img: url(https://i.picsum.photos/id/60/1200/600.jpg?blur=1);
   } @else {
     @return #fff;
   }
-
 }
