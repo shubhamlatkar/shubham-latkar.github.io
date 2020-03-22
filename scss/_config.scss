@@ -4,7 +4,8 @@ $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 
-$bg-img: url(https://i.picsum.photos/id/60/1200/600.jpg?blur=1);
+$bg-img: url(../dist/images/banner-image.jpg);
+
 
 @function set-text-color($color) {
   @if(lightness($color) > 50) {

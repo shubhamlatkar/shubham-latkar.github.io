@@ -1,0 +1,793 @@
+/* line 1, D:/Shubham/portfoliio/scss/_utilities.scss */
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 8, D:/Shubham/portfoliio/scss/_utilities.scss */
+.btn-main,
+.btn-light,
+.btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 17, D:/Shubham/portfoliio/scss/_utilities.scss */
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+
+/* line 22, D:/Shubham/portfoliio/scss/_utilities.scss */
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* line 27, D:/Shubham/portfoliio/scss/_utilities.scss */
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+/* line 34, D:/Shubham/portfoliio/scss/_utilities.scss */
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ffbc00;
+}
+
+/* line 40, D:/Shubham/portfoliio/scss/_utilities.scss */
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* line 45, D:/Shubham/portfoliio/scss/_utilities.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 51, D:/Shubham/portfoliio/scss/_utilities.scss */
+.py-1 {
+  padding: 1rem 0;
+}
+
+/* line 54, D:/Shubham/portfoliio/scss/_utilities.scss */
+.py-2 {
+  padding: 2rem 0;
+}
+
+/* line 57, D:/Shubham/portfoliio/scss/_utilities.scss */
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* line 60, D:/Shubham/portfoliio/scss/_utilities.scss */
+.py-4 {
+  padding: 4rem 0;
+}
+
+/* line 63, D:/Shubham/portfoliio/scss/_utilities.scss */
+.py-5 {
+  padding: 5rem 0;
+}
+
+/* line 70, D:/Shubham/portfoliio/scss/_utilities.scss */
+.my-1 {
+  margin: 1rem 0;
+}
+
+/* line 73, D:/Shubham/portfoliio/scss/_utilities.scss */
+.my-2 {
+  margin: 2rem 0;
+}
+
+/* line 76, D:/Shubham/portfoliio/scss/_utilities.scss */
+.my-3 {
+  margin: 3rem 0;
+}
+
+/* line 79, D:/Shubham/portfoliio/scss/_utilities.scss */
+.my-4 {
+  margin: 4rem 0;
+}
+
+/* line 82, D:/Shubham/portfoliio/scss/_utilities.scss */
+.my-5 {
+  margin: 5rem 0;
+}
+
+/* line 87, D:/Shubham/portfoliio/scss/_utilities.scss */
+.bottom-line {
+  height: 0.1rem;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* line 95, D:/Shubham/portfoliio/scss/_utilities.scss */
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+/* line 105, D:/Shubham/portfoliio/scss/_utilities.scss */
+.bg-main {
+  background: #ffbc00;
+  color: #fff;
+}
+
+/* line 109, D:/Shubham/portfoliio/scss/_utilities.scss */
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+/* line 113, D:/Shubham/portfoliio/scss/_utilities.scss */
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+
+/* line 117, D:/Shubham/portfoliio/scss/_utilities.scss */
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
+/* line 1, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* line 7, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item {
+  position: relative;
+  background: #ffbc00;
+  overflow: hidden;
+}
+
+/* line 12, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: inherit;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 3s cubic-bezier(0.215, 1, 0.355, 1);
+}
+
+/* line 26, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item:hover:after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
+/* line 30, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item:hover .item-img {
+  transform: scale(1.2);
+}
+
+/* line 34, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item:hover .item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 39, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-img {
+  height: auto;
+  transform: translateZ(0);
+  display: block;
+  transition: transform 750ms cubic-bezier(0.215, 1, 0.355, 1);
+}
+
+/* line 46, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-img:before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+/* line 53, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
+/* line 62, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.215, 1, 0.355, 1),
+    transform 500ms cubic-bezier(0.215, 1, 0.355, 1);
+  transition-delay: 300ms;
+}
+
+/* line 78, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-text-wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 85, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-text-title {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin: 5px 0 0 0;
+}
+
+/* line 91, D:/Shubham/portfoliio/scss/_item_grid.scss */
+.item-text-category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* line 6, D:/Shubham/portfoliio/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, D:/Shubham/portfoliio/scss/style.scss */
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+/* line 17, D:/Shubham/portfoliio/scss/style.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 22, D:/Shubham/portfoliio/scss/style.scss */
+li {
+  list-style: none;
+}
+
+/* line 26, D:/Shubham/portfoliio/scss/style.scss */
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+/* line 30, D:/Shubham/portfoliio/scss/style.scss */
+img {
+  width: 100%;
+}
+
+/* line 34, D:/Shubham/portfoliio/scss/style.scss */
+#logo {
+  width: 250px;
+  height: 65px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 42, D:/Shubham/portfoliio/scss/style.scss */
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+/* line 47, D:/Shubham/portfoliio/scss/style.scss */
+#main-nav ul {
+  display: flex;
+}
+
+/* line 51, D:/Shubham/portfoliio/scss/style.scss */
+#main-nav li {
+  padding: 1rem 1.5rem;
+  list-style: none;
+}
+
+/* line 56, D:/Shubham/portfoliio/scss/style.scss */
+#main-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+
+/* line 64, D:/Shubham/portfoliio/scss/style.scss */
+#main-nav a:hover {
+  border-color: #ccc;
+}
+
+/* line 68, D:/Shubham/portfoliio/scss/style.scss */
+#main-nav a.current {
+  border-color: #ffbc00;
+}
+
+/* line 76, D:/Shubham/portfoliio/scss/style.scss */
+#header-home {
+  background: url(https://i.picsum.photos/id/60/1200/600.jpg?blur=1) no-repeat
+    center right/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+/* line 82, D:/Shubham/portfoliio/scss/style.scss */
+#header-home .header-content {
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* line 86, D:/Shubham/portfoliio/scss/style.scss */
+#header-home .header-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+/* line 90, D:/Shubham/portfoliio/scss/style.scss */
+#header-home .header-content h1 .txt-type .txt {
+  border-right: 0.2rem solid #777;
+}
+
+/* line 98, D:/Shubham/portfoliio/scss/style.scss */
+#header-inner {
+  background: url(https://i.picsum.photos/id/60/1200/600.jpg?blur=1) no-repeat
+    20% 30% / cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+}
+
+/* line 108, D:/Shubham/portfoliio/scss/style.scss */
+#home-a .specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* line 114, D:/Shubham/portfoliio/scss/style.scss */
+#home-a .specials .fas {
+  color: #ffbc00;
+  padding: 0.4rem;
+}
+
+/* line 122, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* line 126, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats li {
+  line-height: 2;
+}
+
+/* line 129, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats li.stats-title {
+  font-size: 1.5rem;
+}
+
+/* line 132, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* line 137, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats div {
+  padding: 3rem 0;
+}
+
+/* line 140, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats div:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+/* line 144, D:/Shubham/portfoliio/scss/style.scss */
+#home-b .stats div:nth-child(even) {
+  background: #ccc;
+}
+
+/* line 153, D:/Shubham/portfoliio/scss/style.scss */
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+/* line 159, D:/Shubham/portfoliio/scss/style.scss */
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #ffbc00;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  transition: all 1s;
+}
+
+/* line 173, D:/Shubham/portfoliio/scss/style.scss */
+#home-c .process-icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  padding: 2rem;
+  color: #fff;
+  background: #333;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+/* line 184, D:/Shubham/portfoliio/scss/style.scss */
+#home-c .process-icon:hover {
+  background: #ffbc00;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+
+/* line 190, D:/Shubham/portfoliio/scss/style.scss */
+#home-c .process-icon:hover .process-step {
+  background: #333;
+}
+
+/* line 202, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .about-info {
+  display: grid;
+  grid-template-areas:
+    "bioimage bio bio"
+    "aw1 aw2 aw3";
+  grid-gap: 1.5rem;
+}
+
+/* line 209, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .bio-image {
+  grid-area: bioimage;
+}
+
+/* line 213, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
+}
+
+/* line 219, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .award-1 {
+  grid-area: aw1;
+}
+
+/* line 222, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .award-2 {
+  grid-area: aw2;
+}
+
+/* line 225, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .award-3 {
+  grid-area: aw3;
+}
+
+/* line 229, D:/Shubham/portfoliio/scss/style.scss */
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #ffbc00;
+  margin: 1rem;
+}
+
+/* line 238, D:/Shubham/portfoliio/scss/style.scss */
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+
+/* line 245, D:/Shubham/portfoliio/scss/style.scss */
+#about-b .progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background: #ffbc00;
+}
+
+/* line 255, D:/Shubham/portfoliio/scss/style.scss */
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+/* line 260, D:/Shubham/portfoliio/scss/style.scss */
+#about-c .about-logos img {
+  width: 70%;
+}
+
+/* line 267, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+/* line 272, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* line 279, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+/* line 285, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* line 298, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+/* line 307, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields .name-input {
+  grid-area: name;
+}
+
+/* line 310, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields .email-input {
+  grid-area: email;
+}
+
+/* line 313, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields .subject-input {
+  grid-area: subject;
+}
+
+/* line 316, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields .phone-input {
+  grid-area: phone;
+}
+
+/* line 319, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields .msg-input {
+  grid-area: message;
+  height: 100px;
+}
+
+/* line 324, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+/* line 328, D:/Shubham/portfoliio/scss/style.scss */
+#contact-a button[type="submit"] {
+  width: 50%;
+}
+
+/* line 334, D:/Shubham/portfoliio/scss/style.scss */
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+/* line 342, D:/Shubham/portfoliio/scss/style.scss */
+#contact-c h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+/* line 351, D:/Shubham/portfoliio/scss/style.scss */
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+
+/* line 355, D:/Shubham/portfoliio/scss/style.scss */
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+/* line 360, D:/Shubham/portfoliio/scss/style.scss */
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* line 370, D:/Shubham/portfoliio/scss/style.scss */
+#main-footer .footer-content .social .fab:hover {
+  background: #ffbc00;
+}
+
+@media (max-width: 800px) {
+  /* line 2, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-home {
+    height: 30rem;
+  }
+  /* line 5, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-home .header-content {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 12, D:/Shubham/portfoliio/scss/_media.scss */
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 16, D:/Shubham/portfoliio/scss/_media.scss */
+  #main-nav li {
+    padding: 1rem;
+  }
+  /* line 22, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffbc00;
+    background-position: 20% 30%;
+  }
+  /* line 27, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-home .header-content {
+    display: none;
+  }
+  /* line 32, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-inner {
+    height: 10rem;
+  }
+  /* line 37, D:/Shubham/portfoliio/scss/_media.scss */
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+  /* line 48, D:/Shubham/portfoliio/scss/_media.scss */
+  #home-a .socials div {
+    border-bottom: 1ps solid #f4f4f4;
+    padding-bottom: 1rem;
+  }
+  /* line 52, D:/Shubham/portfoliio/scss/_media.scss */
+  #home-a .socials div:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  /* line 60, D:/Shubham/portfoliio/scss/_media.scss */
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0;
+  }
+  /* line 69, D:/Shubham/portfoliio/scss/_media.scss */
+  #about-a .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "aw1"
+      "aw2"
+      "aw3";
+  }
+  /* line 78, D:/Shubham/portfoliio/scss/_media.scss */
+  #about-c {
+    display: none;
+  }
+  /* line 85, D:/Shubham/portfoliio/scss/_media.scss */
+  #contact-a .text-fields {
+    grid-template-areas:
+      "name"
+      "subject"
+      "email"
+      "phone"
+      "message";
+  }
+  /* line 95, D:/Shubham/portfoliio/scss/_media.scss */
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #555;
+  }
+  /* line 100, D:/Shubham/portfoliio/scss/_media.scss */
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* line 109, D:/Shubham/portfoliio/scss/_media.scss */
+  #contact-c h2 {
+    font-size: 2rem;
+  }
+  /* line 116, D:/Shubham/portfoliio/scss/_media.scss */
+  #main-footer {
+    height: 7rem;
+  }
+  /* line 119, D:/Shubham/portfoliio/scss/_media.scss */
+  #main-footer .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+  }
+}
+
+@media (max-height: 580px) {
+  /* line 130, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-home .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-height: 330px) {
+  /* line 139, D:/Shubham/portfoliio/scss/_media.scss */
+  #header-home .header-content h1 {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

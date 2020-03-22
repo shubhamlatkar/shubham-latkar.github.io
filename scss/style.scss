@@ -32,8 +32,8 @@ img {
 }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 250px;
+  height: 65px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ img {
       padding-top: 20%;
       
       h1 {
-        font-family: 4rem;
+        font-size: 4rem;
         line-height: 1.2;
         .txt-type {
           .txt{
@@ -113,7 +113,7 @@ img {
 
       .fas {
         color: $main-color;
-        padding: 0.4 rem;
+        padding: 0.4rem;
       }
     }
   }
