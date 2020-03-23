@@ -62,5 +62,9 @@ var init = () => {
 // document.addEventListener("DOMContentLoaded", init);
 
 if (document.readyState !== "loading") {
+  console.log("document.readyState");
+  init();
+} else {
+  console.log("DOMContentLoaded");
   init();
 }
