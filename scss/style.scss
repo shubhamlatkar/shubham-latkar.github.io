@@ -357,7 +357,7 @@ img {
     justify-content: space-between;
     height: 5rem;
     align-items: center;
-    .social .fab {
+    .social a .fab{
       margin-right: 1rem;
       border:2px solid #fff;
       border-radius: 50%;
@@ -366,8 +366,10 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
+      color: #fff;
 
       &:hover {
+        color: $dark-color;
         background: $main-color;
       }
     }

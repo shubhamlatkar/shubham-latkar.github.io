@@ -652,7 +652,7 @@ img {
 }
 
 /* line 360, D:/Shubham/portfoliio/scss/style.scss */
-#main-footer .footer-content .social .fab {
+#main-footer .footer-content .social a .fab {
   margin-right: 1rem;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -661,10 +661,12 @@ img {
   line-height: 20px;
   text-align: center;
   padding: 0.5rem;
+  color: #fff;
 }
 
-/* line 370, D:/Shubham/portfoliio/scss/style.scss */
-#main-footer .footer-content .social .fab:hover {
+/* line 371, D:/Shubham/portfoliio/scss/style.scss */
+#main-footer .footer-content .social a .fab:hover {
+  color: #333;
   background: #ffbc00;
 }
 
