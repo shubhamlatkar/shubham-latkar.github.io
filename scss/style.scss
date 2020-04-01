@@ -277,13 +277,46 @@ img {
       }
 
       .details {
+        min-height: 230px;
+        min-width: 220px;
         border: 1px solid $medium-color; 
         border-radius: 5px;
         padding: 0.5rem;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "heading heading"
+        "speciality duration"
+        "stream grade";
+        
+        &-heading {
+          grid-area: heading;
+          text-align: center;
+        }
+        
+        &-speciality {
+          grid-area: speciality;
+            text-align: start;
+        }
+        
+        &-duration {
+          grid-area: duration;
+            text-align: end;
+        }
+        
+        &-stream {
+          grid-area: stream;
+            text-align: start;
+        }
+        
+        &-grade {
+          grid-area: grade;
+            text-align: end;
+        }
       }
 
       img {
-        width: 50px;
+        width: 100px;
         height: 50px;
         border-radius: 50%; 
         margin-right: 0.5rem;

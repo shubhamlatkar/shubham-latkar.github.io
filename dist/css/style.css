@@ -562,21 +562,59 @@ img {
 }
 
 /* line 279, D:/Shubham/portfoliio/scss/style.scss */
-#about-d .testimonials p {
+#about-d .testimonials .details {
+  min-height: 230px;
+  min-width: 220px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 0.5rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "heading heading"
+    "speciality duration"
+    "stream grade";
 }
 
-/* line 285, D:/Shubham/portfoliio/scss/style.scss */
+/* line 292, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials .details-heading {
+  grid-area: heading;
+  text-align: center;
+}
+
+/* line 297, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials .details-speciality {
+  grid-area: speciality;
+  text-align: start;
+}
+
+/* line 302, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials .details-duration {
+  grid-area: duration;
+  text-align: end;
+}
+
+/* line 307, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials .details-stream {
+  grid-area: stream;
+  text-align: start;
+}
+
+/* line 312, D:/Shubham/portfoliio/scss/style.scss */
+#about-d .testimonials .details-grade {
+  grid-area: grade;
+  text-align: end;
+}
+
+/* line 318, D:/Shubham/portfoliio/scss/style.scss */
 #about-d .testimonials img {
-  width: 50px;
+  width: 100px;
   height: 50px;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
 
-/* line 298, D:/Shubham/portfoliio/scss/style.scss */
+/* line 331, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields {
   display: grid;
   grid-template-areas:
@@ -587,63 +625,63 @@ img {
   margin-bottom: 1.2rem;
 }
 
-/* line 307, D:/Shubham/portfoliio/scss/style.scss */
+/* line 340, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields .name-input {
   grid-area: name;
 }
 
-/* line 310, D:/Shubham/portfoliio/scss/style.scss */
+/* line 343, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields .email-input {
   grid-area: email;
 }
 
-/* line 313, D:/Shubham/portfoliio/scss/style.scss */
+/* line 346, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields .subject-input {
   grid-area: subject;
 }
 
-/* line 316, D:/Shubham/portfoliio/scss/style.scss */
+/* line 349, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields .phone-input {
   grid-area: phone;
 }
 
-/* line 319, D:/Shubham/portfoliio/scss/style.scss */
+/* line 352, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields .msg-input {
   grid-area: message;
   height: 100px;
 }
 
-/* line 324, D:/Shubham/portfoliio/scss/style.scss */
+/* line 357, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
 }
 
-/* line 328, D:/Shubham/portfoliio/scss/style.scss */
+/* line 361, D:/Shubham/portfoliio/scss/style.scss */
 #contact-a button[type="submit"] {
   width: 50%;
 }
 
-/* line 334, D:/Shubham/portfoliio/scss/style.scss */
+/* line 367, D:/Shubham/portfoliio/scss/style.scss */
 #contact-b .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
-/* line 342, D:/Shubham/portfoliio/scss/style.scss */
+/* line 375, D:/Shubham/portfoliio/scss/style.scss */
 #contact-c h2 {
   text-align: center;
   font-size: 4rem;
 }
 
-/* line 351, D:/Shubham/portfoliio/scss/style.scss */
+/* line 384, D:/Shubham/portfoliio/scss/style.scss */
 #main-footer {
   background: #333;
   color: #fff;
   height: 5rem;
 }
 
-/* line 355, D:/Shubham/portfoliio/scss/style.scss */
+/* line 388, D:/Shubham/portfoliio/scss/style.scss */
 #main-footer .footer-content {
   display: flex;
   justify-content: space-between;
@@ -651,7 +689,7 @@ img {
   align-items: center;
 }
 
-/* line 360, D:/Shubham/portfoliio/scss/style.scss */
+/* line 393, D:/Shubham/portfoliio/scss/style.scss */
 #main-footer .footer-content .social a .fab {
   margin-right: 1rem;
   border: 2px solid #fff;
@@ -664,7 +702,7 @@ img {
   color: #fff;
 }
 
-/* line 371, D:/Shubham/portfoliio/scss/style.scss */
+/* line 404, D:/Shubham/portfoliio/scss/style.scss */
 #main-footer .footer-content .social a .fab:hover {
   color: #333;
   background: #ffbc00;
