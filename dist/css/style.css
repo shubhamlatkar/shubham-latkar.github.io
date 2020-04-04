@@ -903,7 +903,7 @@ img {
   }
   /* line 24, D:/Shubham/portfoliio/scss/_media.scss */
   #main-nav li {
-    padding: 1rem;
+    padding: 1rem 0.4rem;
   }
   /* line 30, D:/Shubham/portfoliio/scss/_media.scss */
   #header-home {
