@@ -254,13 +254,56 @@ img {
   }
 
   &-c {
-    .about-logos {
+    #about-logos {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 2rem;
-      align-items: center;
       text-align: center;
-      justify-content: center;
+      list-style: none;
+
+      li {
+        color: $dark-color;
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+        h3 {
+          color: $dark-color;
+  
+        }
+
+        ul {
+          display: none;
+        }
+
+        &:hover {
+          background: $medium-color;
+          color: $light-color;
+
+          h3 {
+            color: $light-color;
+          }
+
+          ul {
+            display: block;
+            position: relative;
+            left: 0;
+            width: 100%;
+            margin-top: 1rem;
+
+            li {
+              display: block;
+              background: $medium-color;
+              span {
+                color: $light-color;
+              }
+              &:hover {
+                height: auto;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -272,7 +315,7 @@ img {
 
       ul {
         list-style: none;
-        margin-top: 1rem;
+        margin: 1rem auto;
         display: flex;
         align-items: center;
       }
@@ -512,7 +555,7 @@ img {
           border-radius: 50%;
           transition: background 0.5s ease-in-out;
         }
-        
+
         &.show div {
           transform: none;
           visibility: visible;
