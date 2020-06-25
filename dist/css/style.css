@@ -341,7 +341,7 @@ img {
 
 /* line 78, D:/Shubham/portfoliio/scss/style.scss */
 #header-home {
-  background: url(https://i.picsum.photos/id/60/1200/600.jpg?blur=1) no-repeat
+  background: url(https://i.postimg.cc/DyLkf9bx/banner-image.jpg) no-repeat
     center right/cover;
   height: 100vh;
   color: #fff;
@@ -366,8 +366,8 @@ img {
 
 /* line 100, D:/Shubham/portfoliio/scss/style.scss */
 #header-inner {
-  background: url(https://i.picsum.photos/id/60/1200/600.jpg?blur=1) no-repeat
-    20% 30% / cover;
+  background: url(https://i.postimg.cc/DyLkf9bx/banner-image.jpg) no-repeat 20%
+    30% / cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
 }
