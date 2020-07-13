@@ -4,7 +4,7 @@ $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 
-$bg-img: url(https://i.postimg.cc/DyLkf9bx/banner-image.jpg);
+$bg-img: url(https://i.postimg.cc/G3Wnwhd4/laptop-desk-table-coffee-light-wood-912411-pxhere-com-0.jpg);
 
 @function set-text-color($color) {
   @if(lightness($color) > 50) {
